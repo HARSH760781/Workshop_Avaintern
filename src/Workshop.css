@@ -1,0 +1,231 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, #0d47a1 50%, #ffffff 50%);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevents horizontal scroll */
+  }
+  .table-label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-weight: bold;
+    color: #0d47a1;
+  }
+  
+  
+  /* Main Container */
+  /* Main Container */
+.student-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 75%; /* Centers the card vertically */
+}
+
+/* Student Card */
+.student-card {
+  width: 95%; 
+  max-width: 600px; 
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  padding-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+  
+  .student-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  /* Logo Container */
+  .logo_write {
+    display: flex;
+    align-items: center; /* Center text with logo */
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Company Logo */
+  .company-logo {
+    width: 35px; /* Adjusted for balance */
+    height: 35px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Company Name */
+  .logo_write span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    line-height: 35px; /* Matches logo height for perfect centering */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Different color for 'Intern' */
+  .logo_write span:nth-child(3) {
+    color: #0f52ba;
+    letter-spacing: 0;
+  }
+  
+  
+  /* Title */
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0d47a1;
+  }
+  
+  /* Table Styling */
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table Rows */
+  .student-table tr {
+    transition: background 0.3s ease-in-out;
+    border-bottom:1px solid black;
+  }
+  
+  .student-table tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Cells */
+  .student-table td {    
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  /* Label Column */
+  .table-label {
+    text-align: left;
+    font-weight: bold;
+    color: #0d47a1;
+    text-transform: capitalize;
+    width: 40%;
+    padding-left: 10px;
+  }
+  
+  /* Value Column */
+  .table-value {
+    text-align: start;
+    color: #333;
+    padding-left: 0;
+    font-weight: 400;
+    width: 60%;
+    padding-right: 10px;
+  }
+  
+  /* Status Messages */
+  .loading,
+  .not-found {
+    font-size: 18px;
+    color: #d32f2f;
+    text-align: center;
+    font-weight: bold;
+  }
+  .loader-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .loader {
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-text {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #0d47a1;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Space between table and social icons */
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .social-media a{
+    display: flex;
+    align-items: center;
+  }
+  .social-media img {
+    width: 40px; /* Set uniform size */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .social-media a svg{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .social-icon:hover,
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  
+
+  
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .facebook {
+    color: #1877f2;
+  }
+  
+  .linkedin {
+    color: #0077b5;
+  }
+  
+  .twitter {
+    color: #e30000;
+  }
+  
+  .instagram {
+    color: #e4405f;
+  }
+  
